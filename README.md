@@ -1,14 +1,4 @@
-# MOPSO-NAS
-
-基于多目标粒子群优化（MOPSO）的神经网络架构搜索与图像分类训练项目，支持 CIFAR-10、CIFAR-100、CINIC-10、Tiny-ImageNet 和 ImageNet。
-
-## 环境安装
-
-建议使用 Conda 创建独立环境，然后安装依赖：
-
-```bash
-pip install numpy torch torchvision pillow matplotlib pygraphviz
-```
+# SPMOENAS
 
 ## 数据集
 
