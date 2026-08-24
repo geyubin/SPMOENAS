@@ -24,11 +24,6 @@ python trainforCINIC10.py --cuda 0
 python trainforTinyImagenet.py --cuda 0
 ```
 
-使用 `--help` 查看各脚本的完整参数：
-
-```bash
-python NewMOPSO/main.py --help
-```
 
 ## 项目结构
 
