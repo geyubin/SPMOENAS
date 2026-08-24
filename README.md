@@ -34,5 +34,3 @@ Operation.py            网络基本操作
 dataPrepare.py          数据集与优化器配置
 trainfor*.py            各数据集训练入口
 ```
-
-数据集、训练日志、模型权重及缓存文件不应提交到 GitHub。
