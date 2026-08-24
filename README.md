@@ -28,7 +28,7 @@ python trainforTinyImagenet.py --cuda 0
 ## 项目结构
 
 ```text
-NewMOPSO/               MOPSO 搜索算法
+Search/                 搜索策略
 SearchSpace.py          神经网络搜索空间
 Operation.py            网络基本操作
 dataPrepare.py          数据集与优化器配置
