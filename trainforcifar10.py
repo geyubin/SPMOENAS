@@ -50,16 +50,16 @@ def setup_logger(model_name, epochs, log_dir):
 
 def get_architectures():
         
-    cifar10_ratio_05 =  [1, 0, 0, 1, 0, 2, 5, 1, 1, 0, 2, 4, 0, 1, 3, 7, 3, 1, 1, 2, 6, 1, 0, 1, 3, 7, 5, 0, 1, 0, 1, 4, 0, 2, 0, 3, 6, 1, 2, 3, 4, 5, 0, 1, 1, 4, 2, 0, 4, 1, 6, 7, 1, 1, 0, 5, 0, 1, 0, 1, 6, 2, 0, 1, 2, 4, 2, 0, 1, 4, 1, 1, 1, 1, 3, 1, 4, 1, 0, 0, 1, 4, 0, 1, 1, 4, 0, 4, 0, 0, 1, 3, 1, 4, 0, 2, 0, 2]
+    genotype =  [1, 0, 0, 1, 0, 2, 5, 1, 1, 0, 2, 4, 0, 1, 3, 7, 3, 1, 1, 2, 6, 1, 0, 1, 3, 7, 5, 0, 1, 0, 1, 4, 0, 2, 0, 3, 6, 1, 2, 3, 4, 5, 0, 1, 1, 4, 2, 0, 4, 1, 6, 7, 1, 1, 0, 5, 0, 1, 0, 1, 6, 2, 0, 1, 2, 4, 2, 0, 1, 4, 1, 1, 1, 1, 3, 1, 4, 1, 0, 0, 1, 4, 0, 1, 1, 4, 0, 4, 0, 0, 1, 3, 1, 4, 0, 2, 0, 2]
     return {   
-        'cifar10_ratio_05': cifar10_ratio_05,
+        'genotype': genotype,
     }
 
 
 def parse_args():
     parser = argparse.ArgumentParser(description='Train CIFAR-10 Architecture')
     parser.add_argument('--cuda', type=int, default=0, help='CUDA device ID (-1 for CPU)')
-    parser.add_argument('--model_name', type=str, default='cifar10_ratio_050', help='Architecture name')
+    parser.add_argument('--model_name', type=str, default='genotype', help='Architecture name')
     parser.add_argument('--indice', type=int, default=None, help='Deprecated architecture index, kept for old runs')
     parser.add_argument('--epochs', type=int, default=600)
     parser.add_argument('--batch_size', type=int, default=128)
@@ -76,8 +76,8 @@ def parse_args():
     parser.add_argument('--drop_path_prob', type=float, default=0.1)
     parser.add_argument('--eval_train', type=int, default=1, choices=[0, 1])
     parser.add_argument('--print_freq', type=int, default=1)
-    parser.add_argument('--result_dir', type=str, default='TrainResults_job2_cifar10')
-    parser.add_argument('--log_dir', type=str, default='TrainResults_job2_cifar10/logs')
+    parser.add_argument('--result_dir', type=str, default='TrainResults_cifar10')
+    parser.add_argument('--log_dir', type=str, default='TrainResults_cifar10/logs')
     return parser.parse_args()
 
 
